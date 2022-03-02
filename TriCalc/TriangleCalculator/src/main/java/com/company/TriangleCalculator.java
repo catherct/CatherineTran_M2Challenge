@@ -20,10 +20,14 @@ public class TriangleCalculator {
         double hyp = Math.sqrt((adj * adj) + (opp * opp)); // a^2 + b^2 = c^2
             System.out.println("The length of hypotenuse is... " + hyp);
 
+        double sin = opp / hyp;
+            System.out.println("The value of sine of the given angle is... " + sin);
 
-//            System.out.println("The value of sine of the given angle is... " + Math.sin(hyp));
-//            System.out.println("The value of cosine of the given angle is... " + Math.cos(hyp));
-//            System.out.println("The value of tangent of the given angle is... " + Math.tan(hyp));
+        double cos = adj / hyp;
+            System.out.println("The value of cosine of the given angle is... " + cos);
+
+        double tan = opp / adj;
+            System.out.println("The value of tangent of the given angle is... " + tan);
 
     }
 }
